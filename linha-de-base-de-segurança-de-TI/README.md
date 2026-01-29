@@ -1,19 +1,20 @@
 # 📘 Linha de Base de Segurança de TI
 
-Este repositório estabelece uma linha de base técnica e ética para ambientes de Tecnologia da Informação, Redes e Cibersegurança.
+Este repositório tem como objetivo estabelecer uma base técnica confiável para organização, proteção e governança de ambientes de Tecnologia da Informação, Redes e Cibersegurança.
 
-O objetivo é fornecer padrões mínimos confiáveis para organização, proteção, governança e continuidade de ambientes corporativos.
+Todo o conteúdo aqui presente é revisado, validado e fundamentado em normas, boas práticas reconhecidas e documentação oficial.
+
+Não há publicação de informações sem verificação.
 
 ---
 
 ## 🎯 Objetivo
 
-- Definir padrões essenciais de infraestrutura
-- Padronizar nomenclaturas e processos
-- Apoiar conformidade com normas
-- Promover boas práticas de segurança
-- Servir como referência para profissionais
-
+- Definir padrões mínimos para ambientes de TI
+- Promover organização e rastreabilidade
+- Apoiar conformidade com normas técnicas
+- Incentivar boas práticas de segurança
+- Servir como referência profissional
 ---
 
 ## 📂 Estrutura do Repositório
@@ -81,27 +82,6 @@ Este repositório é desenvolvido com base em princípios bíblicos de:
 > (1 Coríntios 4:2)
 
 A tecnologia aqui é tratada como instrumento de serviço, não de engano.
-
----
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas, desde que:
-
-- Tenham fonte confiável
-- Sejam testadas
-- Estejam documentadas
-- Sigam este padrão
-
-Conteúdos sem validação não serão aceitos.
-
----
-
-## 📜 Licença
-
-Este projeto é de uso educacional e profissional.
-
-Recomenda-se manter os créditos e referências.
 
 ---
 
