@@ -17,12 +17,13 @@ O objetivo é fornecer padrões mínimos confiáveis para organização, proteç
 ---
 
 ## 📂 Estrutura do Repositório
-
+```yaml
 linha-de-base-de-seguranca-de-ti/
 ├── ativos/
 ├── documentos/
 ├── exemplos/
 └── README.md
+```
 
 ### 📁 ativos/
 Inventário e registro de ativos de TI.
