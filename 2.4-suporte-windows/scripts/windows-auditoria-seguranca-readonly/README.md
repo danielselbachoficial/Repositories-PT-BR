@@ -54,3 +54,32 @@ Fornecer uma visão técnica confiável do estado de segurança e configuração
 powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File "Invoke-WindowsServerAuditoriaReadOnly.ps1"
   ``
+
+> A policy não é alterada no sistema.
+
+📂 Saída
+Os relatórios são gerados em:
+```makefile
+C:\Compliance\Audit\<RunId>\
+``
+
+Arquivos principais:
+- audit_full.json
+- summary.html
+- transcript.txt
+- arquivos .sha256
+
+🌐 Relatório HTML
+- Interface moderna e responsiva
+- Charset UTF-8
+- Indicadores visuais de status
+- Compatível com navegadores modernos
+
+⚠️ Observações
+- Recomenda-se execução como Administrador
+- Testar previamente em ambiente de homologação
+- Ambientes com AppLocker/WDAC podem restringir comandos externos
+
+📜 Licença
+- Uso corporativo / interno.
+- Adapte conforme a política da organização.
