@@ -51,9 +51,9 @@ Fornecer uma visão técnica confiável do estado de segurança e configuração
 ## ▶️ Execução
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass `
-  -File "Invoke-WindowsServerAuditoriaReadOnly.ps1"
-  ``
+# Entre no diretório, onde está o script e execute o comando abaixo
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "Invoke-WindowsServerAuditoriaReadOnly.ps1"
+```
 
 > A policy não é alterada no sistema.
 
@@ -61,7 +61,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 Os relatórios são gerados em:
 ```makefile
 C:\Compliance\Audit\<RunId>\
-``
+```
 
 Arquivos principais:
 - audit_full.json
