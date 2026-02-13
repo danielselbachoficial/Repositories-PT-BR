@@ -1,28 +1,30 @@
 # 🧠 Kit de Personalização do Gemini
 
-Um protocolo simples para criar **Instruções de Sistema** robustas para o Google Gemini, focado em produtividade, neurodivergência (TDAH/Autismo) e alinhamento ético.
+Um framework universal para criar **Instruções de Sistema** precisas para o Google Gemini. Transforme a IA em um assistente que pensa e responde exatamente como você precisa.
 
 ## 🎯 O Problema
-Muitas pessoas não sabem "engenharia de prompt" e acabam recebendo respostas genéricas da IA. Este kit resolve isso automatizando a criação de um perfil personalizado.
+A maioria das pessoas usa a IA com configurações padrão, recebendo respostas genéricas ou formatadas de um jeito que não agrada. 
 
-## 🚀 Como Usar (3 Passos)
+Este kit resolve isso automatizando a criação de um "Manual de Instruções" para a sua IA, usando Engenharia de Prompt avançada para traduzir suas necessidades (profissionais, pessoais ou cognitivas) em regras de sistema.
 
-### Passo 1: O Questionário
-Abra o arquivo [`questionario.md`](questionario.md). Copie as perguntas e responda com suas próprias palavras (não se preocupe com formatação).
+## 🚀 Como Funciona
 
-### Passo 2: O Prompt Engenheiro
-Abra o arquivo [`prompt_gerador.md`](prompt_gerador.md). Copie o código, insira suas respostas do Passo 1 onde indicado e envie para o Gemini (em um chat novo).
+### Passo 1: O Questionário (`questionario.md`)
+Você responde a perguntas simples sobre quem você é, o que faz e como gosta de ler (ex: "sou direto", "prefiro tabelas", "sou leigo", "sou especialista").
 
-### Passo 3: Configuração
-A IA vai gerar dois blocos de texto prontos.
-1. Vá em **Configurações** > **Suas instruções para o Gemini** (Saved Info).
-2. Cole o resultado nos campos correspondentes.
+### Passo 2: O Gerador (`prompt_gerador.md`)
+Você usa nosso prompt especial. Ele pega suas respostas simples e as converte em um código de instrução técnica que a IA entende perfeitamente.
+
+### Passo 3: A Configuração
+Você cola o resultado nas configurações de "Saved Info" do Gemini e pronto: a IA agora conhece seu contexto para sempre.
 
 ---
-### 🛡️ Benefícios
-* **Adaptação Cognitiva:** Estruturas lógicas para quem tem TDAH/Autismo.
-* **Alinhamento de Valores:** Define ética e tom de voz desde o início.
-* **Otimização:** Evita o erro de limite de caracteres das configurações.
+
+## 🛡️ Benefícios
+* **Adaptação de Estilo:** A IA se molda ao seu jeito de processar informação (seja você visual, analítico, criativo ou neurodivergente).
+* **Alinhamento Profissional:** Define se a IA deve agir como um Senior Dev, um Professor, um Copywriter ou um Consultor.
+* **Economia de Tempo:** Nunca mais precise digitar "responda de forma curta" ou "aja como especialista". Isso vira o padrão.
+* **Otimização:** Scripts prontos para evitar erros de limite de caracteres.
 
 ---
 *Desenvolvido por Daniel Selbach | Afsim Tech*
