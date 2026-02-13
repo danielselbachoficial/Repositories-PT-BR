@@ -16,9 +16,8 @@ REGRAS DE CRIAÇÃO:
 3. Separe claramente:
    - BLOCO 1: "O que saber sobre mim" (Fatos, contexto, identidade).
    - BLOCO 2: "Como o chat deve se comportar" (Estilo, tom, formatação).
-4. Se eu mencionei neurodivergência (TDAH/Autismo), inclua instruções explícitas de formatação visual (listas, sem blocos de texto densos) para me ajudar.
+4. ANÁLISE DE PERFIL: Identifique meu estilo de processar informação (se sou técnico, criativo, tenho TDAH, prefiro resumos, etc.) e crie regras de formatação que facilitem minha leitura específica.
 
 ---
 DADOS PARA ANÁLISE (Minhas Respostas):
 [COLE SUAS RESPOSTAS DO QUESTIONÁRIO AQUI]
-```
