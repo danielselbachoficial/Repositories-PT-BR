@@ -4,7 +4,7 @@ Copie todo o bloco de código abaixo. Substitua a parte final `[COLE SUAS RESPOS
 
 Cole tudo isso em um **novo chat do Gemini**.
 
-``text
+```text
 ATUE COMO: Um Engenheiro de Prompt Sênior especialista em personalização de LLMs (Large Language Models).
 
 TAREFA:
