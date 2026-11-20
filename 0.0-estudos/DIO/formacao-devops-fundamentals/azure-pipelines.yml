@@ -1,0 +1,68 @@
+# CI: valida o código Terraform e publica o artefato consumido pelo Release (CD).
+# Repositório: Repositories-PT-BR (o projeto fica em 0.0-estudos/DIO/formacao-devops-fundamentals)
+
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 0.0-estudos/DIO/formacao-devops-fundamentals/codigoTerraform/*
+
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  serviceConnection: 'sc-azure-dio'
+  backendResourceGroup: 'rg-terraform-base'
+  backendStorageAccount: 'sttfstatedsf2026'
+  backendContainer: 'tfstate'
+  backendKey: 'devopsdio-lab.tfstate'
+  tfWorkingDir: '$(System.DefaultWorkingDirectory)/0.0-estudos/DIO/formacao-devops-fundamentals/codigoTerraform'
+
+steps:
+  - task: TerraformInstaller@1
+    displayName: 'Terraform | instalar'
+    inputs:
+      terraformVersion: 'latest'
+
+  - script: terraform fmt -check -recursive -diff
+    displayName: 'Terraform | fmt check'
+    workingDirectory: $(tfWorkingDir)
+
+  - task: TerraformTaskV4@4
+    displayName: 'Terraform | init'
+    inputs:
+      provider: 'azurerm'
+      command: 'init'
+      workingDirectory: '$(tfWorkingDir)'
+      backendServiceArm: '${{ variables.serviceConnection }}'
+      backendAzureRmResourceGroupName: '$(backendResourceGroup)'
+      backendAzureRmStorageAccountName: '$(backendStorageAccount)'
+      backendAzureRmContainerName: '$(backendContainer)'
+      backendAzureRmKey: '$(backendKey)'
+
+  - task: TerraformTaskV4@4
+    displayName: 'Terraform | validate'
+    inputs:
+      provider: 'azurerm'
+      command: 'validate'
+      workingDirectory: '$(tfWorkingDir)'
+
+  - task: CopyFiles@2
+    displayName: 'Copiar arquivos Terraform'
+    inputs:
+      SourceFolder: '$(tfWorkingDir)'
+      Contents: |
+        **
+        !.terraform/**
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/terraform'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publicar artefato'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/terraform'
+      ArtifactName: 'terraform'
+      publishLocation: 'Container'
