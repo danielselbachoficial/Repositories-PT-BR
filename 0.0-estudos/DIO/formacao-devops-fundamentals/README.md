@@ -34,7 +34,7 @@ GitHub (main) ──► CI-Terraform (Build) ──► artefato "terraform"
 | Região | westeurope fixa | brazilsouth via variável |
 | Resource Group | rg-auladevops-002 | rg-devopsdio-lab-brs |
 | Storage do site | staccdevopsrg21605 | stsitedevopsdsf2611 |
-| Tags | 4 tags da aula | 5 tags próprias + Workspace + GerenciadoPor |
+| Tags | 4 tags da aula | 7 tags: 5 próprias + Workspace + GerenciadoPor |
 | Provider azurerm | >= 2.0 | ~> 4.0 |
 | HTTPS | enable_https_traffic_only | https_traffic_only_enabled |
 | Site estático | bloco na storage | recurso azurerm_storage_account_static_website |
