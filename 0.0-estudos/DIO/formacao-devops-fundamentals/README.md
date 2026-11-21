@@ -38,8 +38,9 @@ GitHub (main) ──► CI-Terraform (Build) ──► artefato "terraform"
 | Provider azurerm | >= 2.0 | ~> 4.0 |
 | HTTPS | enable_https_traffic_only | https_traffic_only_enabled |
 | Site estático | bloco na storage | recurso azurerm_storage_account_static_website |
-| Estado | tfstate local no repositório | backend remoto em blob |
+| Estado | tfstate local no repositório | backend remoto em blob, tfstate removido do Git |
 | Segurança | sem ajustes | TLS 1.2 e sem acesso público a blobs |
+| Saídas | nenhuma | outputs.tf com nome do RG, tags e URL do site |
 
 ## Problema encontrado
 
